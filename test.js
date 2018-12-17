@@ -24,7 +24,7 @@ exec('tput cols', (error, stdout, stderr) => {
     },
   }
 
-  axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrKey}&text=mountain&format=json&sort=interestingness-desc&per_page=500`).then(data => {
+  axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrKey}&text='mountain'&format=json&sort=interestingness-desc&per_page=500`).then(data => {
     const betterData = data.data.replace(/^.*Api\(/, "").replace(/\)$/, "")
     const jsonData = JSON.parse(betterData)
     const photos = jsonData.photos.photo
@@ -51,3 +51,4 @@ exec('tput cols', (error, stdout, stderr) => {
   }).catch(err => {
     console.log(err)
   })
+})
