@@ -1,0 +1,19 @@
+{
+  "name": "cli-mountains",
+  "version": "1.0.0",
+  "description": "See some mountains in youre terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pm0u/cli-mountains.git"
+  },
+  "author": "paul mourer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pm0u/cli-mountains/issues"
+  },
+  "homepage": "https://github.com/pm0u/cli-mountains#readme"
+}
